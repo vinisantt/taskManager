@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gerenciador de Tarefas</title>
+        <!-- Import Bootstrap CSS-->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+
+        <!-- Material Design Bootstrap -->
+        <!-- <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css"
+            rel="stylesheet"
+        /> -->
+    </head>
+    <body onload="addAttrs()">
+        <div class="container p-3 my-3">
+            <div class="text-center">
+                <h2>Gerenciador de Tarefas</h2>
+            </div>
+            <br />
+            <div class="md-form row justify-content-center">
+                <input
+                    placeholder="Exemplo: Criar tarefa tal em 01/01/2025"
+                    name="new_task"
+                    type="text"
+                    class="form-control col-6"
+                />
+
+                <button
+                    name="salvar"
+                    type="button"
+                    class="btn btn-dark btn-sm rounded"
+                >
+                    Salvar
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <div id="tabela_aqui"></div>
+        </div>
+
+        <!-- Import files in folder -->
+        <script src="Task.js"></script>
+        <script src="table.js"></script>
+        <script src="interface.js"></script>
+
+        <!-- Import Bootstrap Js-->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- MDB core JavaScript -->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"
+        ></script>
+    </body>
+</html>
